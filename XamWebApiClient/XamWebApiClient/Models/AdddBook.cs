@@ -5,22 +5,12 @@ using System.Text.Json.Serialization;
 
 namespace XamWebApiClient.Models
 {
-    public class Book
+    public class AdddBook
     {
-        [JsonPropertyName("id")]
-        public int Id { get; set; }
-
-        [JsonPropertyName("title")]
         public string Title { get; set; }
-
-        [JsonPropertyName("author")]
         public string Author { get; set; }
-
-        [JsonPropertyName("description")]
         public string Description { get; set; }
-
-        public string ImageUrl { get; set; }
-
+        public byte[] ImageArray { get; set; }
 
     }
 }

@@ -18,7 +18,9 @@
                 <Label Text="Description" />
                 <Editor Text="{Binding Description}" />
             </StackLayout>
-
+            <Button Text="Upload"
+                    Command="{Binding UploadBookImageCommand}" />
+        
             <Button Text="Save"
                     Command="{Binding SaveBookCommand}" />
 

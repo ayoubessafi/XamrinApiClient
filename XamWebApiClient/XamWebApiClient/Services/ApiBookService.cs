@@ -38,7 +38,7 @@ namespace XamWebApiClient.Services
             return JsonSerializer.Deserialize<Book>(responseAsString);
         }
 
-        public async Task AddBook(Book book)
+        public async Task AddBook(AdddBook book)
         {
             var response = await _httpClient.PostAsync("Books", 
                 new StringContent(JsonSerializer.Serialize(book), Encoding.UTF8, "application/json"));

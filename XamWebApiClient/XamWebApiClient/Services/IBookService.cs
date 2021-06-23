@@ -8,7 +8,7 @@ namespace XamWebApiClient.Services
     {
         Task<IEnumerable<Book>> GetBooks();
         Task<Book> GetBook(int id);
-        Task AddBook(Book book);
+        Task AddBook(AdddBook book);
         Task SaveBook(Book book);
         Task DeleteBook(Book book);      
     }
